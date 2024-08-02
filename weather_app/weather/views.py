@@ -1,5 +1,6 @@
 from rest_framework import status
 from rest_framework.decorators import api_view
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework.response import Response
 from .models import WeatherData
 from .utils import fetch_weather_from_api
@@ -64,3 +65,4 @@ def delete_weather_by_id(request, id):
         return Response({"message": f"Weather data with ID {id} has been deleted."})
     except WeatherData.DoesNotExist:
         return Response({"error": "No data found for the specified ID."}, status=status.HTTP_404_NOT_FOUND)
+    
