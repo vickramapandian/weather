@@ -85,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'weather_db',
         'USER': 'postgres',
-        'PASSWORD': 'admin@123',
+        'PASSWORD': '####',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -134,7 +134,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # openweather API key
-OPENWEATHER_API_KEY = '6569d6916be01fd263f7f59341246131'
+OPENWEATHER_API_KEY = '##################'
 
 # CELERY BEAT SCHEDULER
 
